@@ -299,6 +299,7 @@ Rules:
 - Radius → `radius-md` for all sizes including lg
 - Disabled = `bg-disabled` fill, `text-disabled` text, `pointer-events: none` — never a tinted primary
 - Dropdown trigger buttons: `justify-content: space-between` so label pins left, chevron pins right
+- **Button text is always single line** — never allow text to wrap. Use `white-space: nowrap` or keep labels short. If a label is too long, truncate or shorten the copy — never let the button grow taller.
 - Define hover, active, disabled states for every variant
 
 ### Input
@@ -1262,4 +1263,5 @@ Matches Tailwind `screens` config exactly. Vuetify responsive props (`sm:`, `md:
 - Omitting `hide-details` on inputs/checkboxes unless validation messages are needed
 - Hardcoding `border-radius` px values — use `rounded="*"` prop or Tailwind radius classes
 - Vuetify's default `text-transform: uppercase` on buttons — always add to global CSS: `.v-btn { text-transform: none !important; letter-spacing: normal !important; }`
+- Button text wrapping to multiple lines — always `whitespace-nowrap`; shorten the label instead
 - Setting `elevation > 0` on `VBtn` globally — ghost/outlined/text buttons must never have shadow. Always use `VBtn: { elevation: 0 }` in defaults; apply `shadow-cta` via Tailwind class explicitly on CTAs only when needed.
