@@ -971,7 +971,7 @@ export default createVuetify({
 | `rounded="md"` | 8px | `radius-md` | buttons, inputs |
 | `rounded="lg"` | 12px | `radius-lg` | chat bubbles |
 | `rounded="xl"` | 16px | `radius-xl` | modals |
-| `rounded="2xl"` | 12px | `radius-xxl` | cards (changed from `rounded="card"`) |
+| `rounded="xxl"` | 12px | `radius-xxl` | cards |
 | `rounded="pill"` | 9999px | `radius-full` | chips, badges, avatars |
 
 ---
@@ -1053,7 +1053,7 @@ Custom CSS for thumb/track is already in `Switch.vue` — do not re-implement.
 <Card :no-body-padding="true" :no-title-padding="true" />
 ```
 
-`rounded="2xl"` and `class="shadow-card"` are applied automatically — do not add them again.
+`rounded="xxl"` and `class="shadow-card"` are applied automatically — do not add them again.
 
 ---
 
@@ -1179,7 +1179,7 @@ The full `$rounded` map derived from the 4px root:
 #### Card
 ```scss
 $card-elevation: 6              // cards have elevation 6 by default
-$card-border-radius: 6px        // SCSS default; Card.vue overrides with rounded="2xl" (12px)
+$card-border-radius: 6px        // SCSS default; Card.vue overrides with rounded="xxl" (12px)
 $card-text-padding: 24px        // VCardText padding = spacing-xl
 $card-item-padding: 24px        // VCardItem padding = spacing-xl
 $card-actions-padding: 0 24px 12px   // actions: 0 top, 24px sides, 12px bottom
